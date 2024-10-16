@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>  LearnVox - Your Learning Partner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <div id="loading-spinner" class="spinner-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="https://yadavsourabhgh.github.io/LEARNVOX.jpg" alt="LearnVox Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#topics">Popular Topics</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <div id="content">
+        <section id="hero">
+            <h1>Welcome to LearnVox</h1>
+            <p>Your ultimate platform for mastering diverse skills!</p>
+            <a href="#courses" class="scroll-down">Explore Courses</a>
+        </section>
+ 
+        <section id="courses">
+            <h2>Our Courses</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <img src="Images/oscar-nord-MuJHwDHbXUk-unsplash.jpg" alt="Computer Science">
+                    <h3>Computer Science</h3>
+                </div>
+                <div class="course-card">
+                    <img src="Images/sahand-babali-gavODTHG36Y-unsplash.jpg" alt="Electronics">
+                    <h3>Electronics</h3>
+                </div>
+                <div class="course-card">
+                    <img src="Images/cody-scott-milewski-u26fHO4W9DM-unsplash.jpg" alt="Content Creation">
+                    <h3>Content Creation</h3>
+                </div>
+                <div class="course-card">
+                    <img src="Images/vedrana-filipovic-jxqTaXF5WmY-unsplash.jpg" alt="Chemical Engineering">
+                    <h3>Chemical Engineering</h3>
+                </div>
+                <div class="course-card">
+                    <img src="Images/kelly-sikkema-xoU52jUVUXA-unsplash.jpg" alt="Business and Accountant">
+                    <h3>Business and Accountant</h3>
+                </div>
+                <div class="course-card">
+                    <img src="Images/jay-heike-M6xNMyYi4H8-unsplash.jpg" alt="Mechanical Engineering">
+                    <h3>Mechanical Engineering</h3>
+                </div>
+                <div class="course-card">
+                    <img src="Images/adeolu-eletu-E7RLgUjjazc-unsplash.jpg" alt="Financial Planning">
+                    <h3>Financial Planning</h3>
+                </div>
+                <div class="course-card">
+                    <img src="" alt="Robotics">
+                    <h3>Robotics</h3>
+                </div>
+            </div>
+        </section>
+ 
+        <section id="topics">
+            <h2>Popular Topics</h2>
+            <div class="topic-grid">
+                <div class="topic-card">
+                    <h3>Web Development</h3>
+                    <p>Learn the latest web technologies including HTML, CSS, JavaScript, and more.</p>
+                </div>
+                <div class="topic-card">
+                    <h3>Artificial Intelligence</h3>
+                    <p>Master AI concepts and tools such as Machine Learning, Neural Networks, and Python.</p>
+                </div>
+                <div class="topic-card">
+                    <h3>Data Science</h3>
+                    <p>Become proficient in data analysis, visualization, and data-driven decision-making.</p>
+                </div>
+            </div>
+        </section>
+
+    
+        <section id="testimonials">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial">
+                <p>"LearnVox helped me excel in robotics, and now I'm building my own robots!"</p>
+                <h4>- Sarah J.</h4>
+            </div>
+            <div class="testimonial">
+                <p>"The business and financial planning courses transformed my career!"</p>
+                <h4>- Michael D.</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I gained hands-on experience with electronics and secured a great job!"</p>
+                <h4>- Emily T.</h4>
+            </div>
+        </section>
+
+      
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>How do I enroll in a course?</h3>
+                    <p>Simply visit the Courses section and click on the course you’re interested in to begin.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are there any free courses available?</h3>
+                    <p>Yes! We offer a selection of free courses in various subjects to help you get started.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>We'd love to hear from you! Reach out to us through the form or connect with us on social media.</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="Images/icons8-facebook-100.png" alt="Facebook"></a>
+                        <a href="#"><img src="Images/icons8-linkedin-100.png" alt="LinkedIn"></a>
+                        <a href="#"><img src=Images/10900021.png alt="Instagram"></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="contact-form">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    
+
+    <footer>
+        <p>&copy; 2024 LearnVox. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

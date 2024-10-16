@@ -1,0 +1,313 @@
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #f4b106b8;
+  scroll-behavior: smooth;
+  cursor: url('images/icons8-cursor-50.png'), auto; 
+   
+}
+
+title{
+  color: #fa9e4d;
+ font-style: bold;
+}
+ 
+@media (max-width: 768px) {
+  .course-grid, .topic-grid, .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+header {
+  background-color: #FFA500;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  border: 5px solid black;
+  border-radius: 50px;
+  height: 90px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #f4f4f4;
+}
+
+#hero {
+  background: url('Images/debby-hudson-IjQdCrknYXI-unsplash.jpg') no-repeat center center / cover;
+  background-attachment: fixed;
+  padding: 100px 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(248, 137, 11);
+  size: 5px;
+}
+
+#hero h1 {
+  font-size: 3.5em;
+}
+.scroll-down {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: white;
+  color: #101010;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-down:hover {
+  background-color: #f4b106b8;
+  color: white;
+  size-adjust: 5px;
+}
+
+#courses, #topics, #testimonials, #faq {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#courses h2, #topics h2, #testimonials h2, #faq h2 {
+  font-size: 2.5em;
+  color: #FFA500;
+  margin-bottom: 30px;
+}
+
+.course-grid, .topic-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+ 
+}
+
+.course-card, .topic-card {
+  background-color: rgb(250, 244, 228);
+  border: 1px solid #FFA500;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover, .topic-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  cursor: pointer;
+  background-color: #efac40;
+  padding: 20px;
+  color: #0006a7;
+}
+.course-card:active{
+  opacity: 0.5;
+}
+
+.course-card img, .topic-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.testimonial {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.testimonial:hover{
+cursor: pointer;
+position: inherit;
+}
+
+
+.faq-list {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.faq-item:active{
+  opacity: 0.4;
+}
+
+footer {
+  padding: 20px;
+  background-color: #FFA500;
+  text-align: center;
+  color: white;
+}
+
+ 
+.spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+ 
+#contact {
+  background: linear-gradient(to right, #FFA500, #ff7f50);
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  flex: 1;
+  padding: 20px;
+}
+
+.contact-info p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+  width:  60px;
+  height: 60px;
+}
+
+.social-icons img {
+  width: 100%;
+  height: auto;
+}
+
+.contact-form-wrapper {
+  flex: 1;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin: 15px 0 5px;
+  color: #333;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #FFA500;
+  box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+}
+
+form button {
+  padding: 12px 20px;
+  background-color: #FFA500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ff7f50;
+}
+
+ 
+@media (max-width: 768px) {
+  .contact-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .contact-form-wrapper {
+      width: 100%;
+  }
+  
+  .social-icons a {
+      width: 30px;
+      height: 30px;
+  }
+}
